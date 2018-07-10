@@ -8,20 +8,20 @@ asdf_library: !core/software-1.0.0 {author: Space Telescope Science Institute, h
 history:
   extensions:
   - !core/extension_metadata-1.0.0
-    extension_class: gwcs.extension.GWCSExtension
-    software: {name: gwcs, version: 0.10.dev367}
-  - !core/extension_metadata-1.0.0
     extension_class: astropy.io.misc.asdf.extension.AstropyAsdfExtension
     software: {name: astropy, version: 3.1.dev21950}
   - !core/extension_metadata-1.0.0
-    extension_class: astropy.io.misc.asdf.extension.AstropyExtension
-    software: {name: astropy, version: 3.1.dev21950}
+    extension_class: jwst.transforms.jwextension.JWSTExtension
+    software: {name: jwst, version: 0.9.8a0.dev32+g360261cf}
   - !core/extension_metadata-1.0.0
     extension_class: asdf.extension.BuiltinExtension
     software: {name: asdf, version: 2.1.0.dev1406}
   - !core/extension_metadata-1.0.0
-    extension_class: jwst.transforms.jwextension.JWSTExtension
-    software: {name: jwst, version: 0.9.7a0.dev7+gc2aeee32}
+    extension_class: astropy.io.misc.asdf.extension.AstropyExtension
+    software: {name: astropy, version: 3.1.dev21950}
+  - !core/extension_metadata-1.0.0
+    extension_class: gwcs.extension.GWCSExtension
+    software: {name: gwcs, version: 0.10.dev370}
 lam: [2.8999999999999998e-06, 3.3900000000000002e-06, 3.8800000000000001e-06, 4.3699999999999997e-06,
   4.9999999999999996e-06]
 msax: [0.037979015001271453, 0.037979022538485063, 0.037979030075698667, 0.037979037612912277,
